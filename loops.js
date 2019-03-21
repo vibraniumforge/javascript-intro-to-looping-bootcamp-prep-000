@@ -18,8 +18,8 @@ function whileLoop(num) {
 }
 
 function doWhileLoop(num) {
+  let i = 0;
   function incrementVariable() {
-    let i=0
 		i = i + 1;
 	}
   do {
