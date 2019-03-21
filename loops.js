@@ -4,9 +4,9 @@ function forLoop(ar) {
       ar.push("I am 1 strange loop.")
     } else {
       ar.push(`I am ${i} strange loops.`)
-    }
-    return ar
-}
+    }  
+  }
+return ar;
 }
 
 function whileLoop(num) {
