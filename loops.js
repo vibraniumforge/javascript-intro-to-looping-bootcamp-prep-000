@@ -17,16 +17,11 @@ function whileLoop(num) {
   return "done";
 }
 
-function doWhileLoop(array) {
-	var i = 0;
-	function incrementVariable() {
-		i = i + 1;
+function doWhileLoop(num) {
+  function incrementVariable(num) {
+		num = num + 1;
 	}
-	do {
-		console.log('array.length = ' + array.length + ' and i = ' + i);
-		array = array.slice(1);
-		incrementVariable();
-	} while (array.length > 0 && i < 5);
-
-	return array;
+  do {
+    console.log("I run once regardless.");
+  } while (incrementVariable() < num)
 }
